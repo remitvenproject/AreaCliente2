@@ -157,16 +157,16 @@
 
                     <div class="col-lg-9">
                         <div class="profile-content">
-                            <h3 class="admin-heading">Send Money</h3>
+                            <h3 class="admin-heading">Enviar dinero</h3>
                             <ul class="nav nav-pills">
                                 <li class="nav-item">
-                                    <a class="nav-link active" href="send-money.html">Send</a>
+                                    <a class="nav-link active" href="send-money.html">Enviar</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="send-money-confirm.html">Confirm</a>
+                                    <a class="nav-link" href="send-money-confirm.html">Confirmar</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="send-money-success.html">Success</a>
+                                    <a class="nav-link" href="send-money-success.html">Completado</a>
                                 </li>
                             </ul>
                             <div class="tab-content" id="pills-tabContent">
@@ -174,13 +174,18 @@
 
                                     <form id="send-money" method="post" class="form bg-offwhite py-5">
                                         <div class="text-center">
-                                            <h3 class="text-5 msg-header">Personal Details</h3>
-                                            <p class="text-4 text-center">Send your money on anytime, anywhere in the world.</p>
+                                            <h3 class="text-5 msg-header">Detalles</h3>
+                                            <!-- <p class="text-4 text-center">Send your money on anytime, anywhere in the world.</p> -->
                                         </div>
 
                                         <div class="form-group">
-                                            <label for="emailID">Recipient</label>
-                                            <input type="text" value="" class="form-control" data-bv-field="emailid" id="emailID" required placeholder="Enter Email Address">
+                                            <label for="emailID">Beneficiario</label>
+                                            <!-- <input type="text" value="" class="form-control" data-bv-field="emailid" id="emailID" required placeholder="Enter Email Address"> -->
+                                            <select id="cardType" class="custom-select" required="">
+                                                <option>Beneficiario A</option>
+                                                <option>Beneficiario B</option>
+                                                <option>Beneficiario C</option>
+                                            </select>
                                         </div>
                                         <div class="row">
                                             <div class="col">
@@ -189,20 +194,18 @@
                                             <div class="col"></div>
                                         </div>
                                         <div class="form-group">
-                                            <label for="youSend">You Send</label>
+                                            <label for="youSend">Monto a enviar</label>
                                             <div class="input-group">
-                                                <div class="input-group-prepend"><span class="input-group-text currency-icon">$</span>
+                                                <div class="input-group-prepend"><span class="input-group-text currency-icon">£</span>
                                                 </div>
                                                 <input type="text" class="form-control" data-bv-field="youSend" id="youSend" value="1,000" placeholder="">
                                                 <div class="input-group-append">
                                                     <span class="input-group-text p-0">
                                                         <select id="youSendCurrency" data-style="custom-select bg-transparent border-0" data-container="body" data-live-search="true" class="selectpicker form-control bg-transparent" required="">
                                                             <optgroup label="Popular Currency">
-                                                                <option data-icon="currency-flag currency-flag-usd mr-1" data-subtext="United States dollar" selected="selected" value="">USD</option>
-                                                                <option data-icon="currency-flag currency-flag-aud mr-1" data-subtext="Australian dollar" value="">AUD</option>
-                                                                <option data-icon="currency-flag currency-flag-eur mr-1" data-subtext="Euro" value="">EUR</option>
+                                                                <option data-icon="currency-flag currency-flag-gbp mr-1" data-subtext="British pound" selected="selected" value="">GBP</option>
                                                             </optgroup>
-                                                            <option value="" data-divider="true">divider</option>
+                                                            <!-- <option value="" data-divider="true">divider</option>
                                                             <optgroup label="Other Currency">
                                                                 <option data-icon="currency-flag currency-flag-aed mr-1" data-subtext="United Arab Emirates dirham" value="">AED</option>
                                                                 <option data-icon="currency-flag currency-flag-ars mr-1" data-subtext="Argentine peso" value="">ARS</option>
@@ -252,7 +255,7 @@
                                                                 <option data-icon="currency-flag currency-flag-ugx mr-1" data-subtext="Ugandan shilling" value="">UGX</option>
                                                                 <option data-icon="currency-flag currency-flag-vnd mr-1" data-subtext="Vietnamese dong" value="">VND</option>
                                                                 <option data-icon="currency-flag currency-flag-zar mr-1" data-subtext="South African rand" value="">ZAR</option>
-                                                            </optgroup>
+                                                            </optgroup> -->
                                                         </select>
                                                     </span>
                                                 </div>
@@ -261,16 +264,16 @@
                                         <div class="form-group">
                                             <label for="recipientGets">Recipient Gets</label>
                                             <div class="input-group">
-                                                <div class="input-group-prepend"><span class="input-group-text  currency-icon">$</span></div>
+                                                <div class="input-group-prepend"><span class="input-group-text  currency-icon">Bs</span></div>
                                                 <input type="text" class="form-control" data-bv-field="recipientGets" id="recipientGets" value="1,410.06" placeholder="">
                                                 <div class="input-group-append"> <span class="input-group-text p-0">
                                                         <select id="recipientCurrency" data-style="custom-select bg-transparent border-0" data-container="body" data-live-search="true" class="selectpicker form-control bg-transparent" required="">
                                                             <optgroup label="Popular Currency">
-                                                                <option data-icon="currency-flag currency-flag-usd mr-1" data-subtext="United States dollar" value="">USD</option>
-                                                                <option data-icon="currency-flag currency-flag-aud mr-1" data-subtext="Australian dollar" selected="selected" value="">AUD</option>
-                                                                <option data-icon="currency-flag currency-flag-inr mr-1" data-subtext="Indian rupee" value="">INR</option>
+                                                                <option data-icon="currency-flag currency-flag-usd mr-1" data-subtext="United States dollar" value="">Bs</option>
+                                                                <!-- <option data-icon="currency-flag currency-flag-aud mr-1" data-subtext="Australian dollar" selected="selected" value="">AUD</option>
+                                                                <option data-icon="currency-flag currency-flag-inr mr-1" data-subtext="Indian rupee" value="">INR</option> -->
                                                             </optgroup>
-                                                            <option value="" data-divider="true">divider</option>
+                                                            <!-- <option value="" data-divider="true">divider</option>
                                                             <optgroup label="Other Currency">
                                                                 <option data-icon="currency-flag currency-flag-aed mr-1" data-subtext="United Arab Emirates dirham" value="">AED</option>
                                                                 <option data-icon="currency-flag currency-flag-ars mr-1" data-subtext="Argentine peso" value="">ARS</option>
@@ -320,32 +323,32 @@
                                                                 <option data-icon="currency-flag currency-flag-ugx mr-1" data-subtext="Ugandan shilling" value="">UGX</option>
                                                                 <option data-icon="currency-flag currency-flag-vnd mr-1" data-subtext="Vietnamese dong" value="">VND</option>
                                                                 <option data-icon="currency-flag currency-flag-zar mr-1" data-subtext="South African rand" value="">ZAR</option>
-                                                            </optgroup>
+                                                            </optgroup> -->
                                                         </select>
                                                     </span>
                                                 </div>
                                             </div>
                                         </div>
                                         <br>
-                                        <p class="text-muted text-center">The current exchange rate is <b>1 USD = 1.42030 AUD</b></p>
+                                        <p class="text-muted text-center">Tasa de cambio <b>1 GBP = 85.000 Bs</b></p>
                                         <hr>
                                         <div class="row">
                                             <div class="col-md-6">
-                                                <p class="text-left"><b>Transactions fees </b></p>
+                                                <p class="text-left"><b>Comisión </b></p>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="text-right">
-                                                    <span class="bg-success free-charge">Free</span>
-                                                    <del>1.00 USD</del>
+                                                    <span class="bg-success free-charge">Gratis</span>
+                                                    <del>0.00 GBP</del>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6">
-                                                <p class="text-left"><b>You'll deposit</b></p>
+                                                <p class="text-left"><b>Recibirás</b></p>
                                             </div>
                                             <div class="col-md-6">
-                                                <span class="float-right">1,000.00 USD</span>
+                                                <span class="float-right">1,000.00 Bs</span>
                                             </div>
                                         </div>
                                         <ul class="pager mt-4">
@@ -353,7 +356,7 @@
                                             <li>
                                                 <a href="send-money-confirm.html" class="btn btn-default mr-0">
                                                     <span class="bh"></span>
-                                                    <span>Next</span>
+                                                    <span>Siguiente</span>
                                                     <i class="fas fa-chevron-right"></i>
                                                 </a>
                                             </li>

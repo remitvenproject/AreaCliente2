@@ -158,8 +158,8 @@
                     <div class="col-lg-9">
 
                         <div class="profile-content">
-                            <h3 class="admin-heading">Deposit Money</h3>
-                                <ul class="nav nav-pills">
+                            <h3 class="admin-heading">Calcular envio</h3>
+                                <!-- <ul class="nav nav-pills">
                                     <li class="nav-item">
                                         <a class="nav-link active" href="deposit-money.html">Deposit</a>
                                     </li>
@@ -169,25 +169,25 @@
                                     <li class="nav-item">
                                         <a class="nav-link" href="deposit-money-success.html">Success</a>
                                     </li>
-                                </ul>
+                                </ul> -->
                                 <div class="tab-content" id="pills-tabContent">
                                     <div class="tab-pane fade show active" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                                         <form id="deposit-send-money" method="post" class="form bg-offwhite">
                                             <div class="form-group">
-                                                <label for="deposit-money">Amount</label>
+                                                <label for="deposit-money">Monto</label>
                                                 <div class="input-group">
-                                                    <div class="input-group-prepend"><span class="input-group-text currency-icon">$</span>
+                                                    <div class="input-group-prepend"><span class="input-group-text currency-icon">£</span>
                                                     </div>
-                                                    <input type="text" class="form-control" data-deposit="deposit-money" id="deposit-money" value="1,000" placeholder="">
+                                                    <input type="text" class="form-control" data-deposit="deposit-money" id="deposit-money" value="100" placeholder="">
                                                     <div class="input-group-append">
                                                         <span class="input-group-text">
                                                             <select id="youSendCurrency" data-style="custom-select" data-container="body" data-live-search="true" class="selectpicker " required="">
                                                                 <optgroup label="Popular Currency">
-                                                                    <option data-icon="currency-flag currency-flag-usd mr-1" data-subtext="United States dollar" selected="selected" value="">USD</option>
-                                                                    <option data-icon="currency-flag currency-flag-aud mr-1" data-subtext="Australian dollar" value="">AUD</option>
-                                                                    <option data-icon="currency-flag currency-flag-eur mr-1" data-subtext="Euro" value="">EUR</option>
+                                                                    <option data-icon="currency-flag currency-flag-gbp mr-1" data-subtext="British pound" selected="selected" value="">GBP</option>
+                                                                    <!-- <option data-icon="currency-flag currency-flag-aud mr-1" data-subtext="Australian dollar" value="">AUD</option>
+                                                                    <option data-icon="currency-flag currency-flag-eur mr-1" data-subtext="Euro" value="">EUR</option> -->
                                                                 </optgroup>
-                                                                <option value="" data-divider="true">divider</option>
+                                                                <!-- <option value="" data-divider="true">divider</option>
                                                                 <optgroup label="Other Currency">
                                                                     <option data-icon="currency-flag currency-flag-aed mr-1" data-subtext="United Arab Emirates dirham" value="">AED</option>
                                                                     <option data-icon="currency-flag currency-flag-ars mr-1" data-subtext="Argentine peso" value="">ARS</option>
@@ -237,12 +237,12 @@
                                                                     <option data-icon="currency-flag currency-flag-ugx mr-1" data-subtext="Ugandan shilling" value="">UGX</option>
                                                                     <option data-icon="currency-flag currency-flag-vnd mr-1" data-subtext="Vietnamese dong" value="">VND</option>
                                                                     <option data-icon="currency-flag currency-flag-zar mr-1" data-subtext="South African rand" value="">ZAR</option>
-                                                                </optgroup>
+                                                                </optgroup> -->
                                                             </select>
                                                         </span></div>
                                                 </div>
                                             </div>
-                                            <div class="form-group">
+                                            <!-- <div class="form-group">
                                                 <label for="payment-method">Payment Method</label>
                                                 <select id="payment-method" class="custom-select" required="">
                                                     <option value="">Select Payment Method</option>
@@ -250,25 +250,25 @@
                                                     <option value="02">Paypal</option>
                                                     <option value="03">Bank Accounts</option>
                                                 </select>
-                                            </div>
+                                            </div> -->
                                             <div class="row">
                                                 <div class="col-md-6">
-                                                    <p class="text-left"><b>Transactions fees </b></p>
+                                                    <p class="text-left"><b>Comisión </b></p>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="text-right">
-                                                        <span class="bg-success free-charge">Free</span>
-                                                        <del>1.00 USD</del>
+                                                        <span class="bg-success free-charge">Gratis</span>
+                                                        <del>0.00 GBP</del>
                                                     </div>
                                                 </div>
                                             </div>
                                             <hr>
                                             <div class="row">
                                                 <div class="col-md-6">
-                                                    <p class="text-left"><b>You'll deposit</b></p>
+                                                    <p class="text-left"><b>Bolívares</b></p>
                                                 </div>
                                                 <div class="col-md-6">
-                                                        <span class="float-right">1,000.00 USD</span>
+                                                        <span class="float-right">8.050.000,00 VES</span>
                                                 </div>
                                             </div>
                                             <ul class="pager mt-4">

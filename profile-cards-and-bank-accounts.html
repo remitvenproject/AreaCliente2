@@ -156,21 +156,21 @@
 
                 <!-- Middle Panel  -->
                 <div class="col-lg-9">
-                    <h2 class="admin-heading">Profile Card and Bank account(for payments)</h2>
+                    <h2 class="admin-heading">Beneficiarios</h2>
                     <!-- Credit or Debit Cards  -->
                     <div class="infoItems bg-offwhite">
                         <div class="row">
                             <div class="col-12 col-sm-6 col-lg-4">
-                                <div class="account-card account-card-primary">
-                                        <p class="pirotry text-right">Primery</p> 
+                                <div class="account-card account-card-primary text-center p-4">
+                                        <!-- <p class="pirotry text-right">Primery</p>  -->
                                     <div class="row">
                                         <p class="card-number col-12">XXXX-XXXX-XXXX-8943</p>
                                     </div>
                                     <div class="row">
-                                        <div class="col-6">
+                                        <!-- <div class="col-6">
                                             <p class="valid-card">Valid true</p>
                                             <p class="expare ">05/28</p>  
-                                        </div>
+                                        </div> -->
                                         <div class="col-6">
                                              
                                         </div>                                        
@@ -179,9 +179,9 @@
                                         <div class="col-6">
                                             <p class="card-holder-name">Sohne Due</p> 
                                         </div>
-                                        <div class="col-6">
+                                        <!-- <div class="col-6">
                                             <img class="ml-auto" src="images/visa.png" alt="visa" title="">
-                                        </div>
+                                        </div> -->
                                     </div>
                                     <div class="account-card-overlay">
                                         <a href="#" data-target="#edit-card-details"class="text-light btn-link pbtn" data-id="edit-card-details"> <span class="mr-1"><i class="fas fa-edit"></i></span>Edit</a> 
@@ -190,12 +190,12 @@
                                 </div>
                             </div>
                             <div class="col-12 col-sm-6 col-lg-4">
-                                <div class="account-card account-card-primary">
-                                        <p class="pirotry text-right">Secondary </p>  
+                                <div class="account-card account-card-primary text-center p-4">
+                                        <!-- <p class="pirotry text-right">Secondary </p>   -->
                                     <div class="row">
                                         <p class="card-number col-12">XXXX-XXXX-XXXX-2353</p>
                                     </div>
-                                    <div class="row">
+                                    <!-- <div class="row">
                                         <div class="col-6">
                                             <p class="valid-card">Valid true</p>
                                             <p class="expare ">05/25</p>  
@@ -203,14 +203,14 @@
                                         <div class="col-6">
                                             
                                         </div>                                        
-                                    </div>      
+                                    </div>       -->
                                     <div class="row">
                                         <div class="col-6">
                                             <p class="card-holder-name">Sohne Due</p> 
                                         </div>
-                                        <div class="col-6">
+                                        <!-- <div class="col-6">
                                             <img class="ml-auto" src="images/mastercard.png" alt="visa" title="">
-                                        </div>
+                                        </div> -->
                                     </div>
                                     <div class="account-card-overlay">                                        
                                         <a href="#" data-target="#edit-card-details"class="text-light btn-link pbtn" data-id="edit-card-details"> <span class="mr-1"><i class="fas fa-edit"></i></span>Edit</a> 
@@ -234,23 +234,27 @@
                     <div id="edit-card-details" class="accord bg-offwhite mt-3 p-3">
                         <div class="content-edit-area">
                             <div class="edit-header">
-                                <h5 class="title">Update Card</h5>
+                                <h5 class="title">Actualizar beneficiario</h5>
                                 <button type="button" class="close"><span aria-hidden="true">&times;</span></button>
                             </div>
                             <div class="edit-content">
                                 <form id="update-card" method="post">
                                     <div class="form-group">
-                                        <label for="edircardNumber">Your Card Number</label>
+                                        <label for="edircardNumber">Numero de cuenta</label>
                                         <div class="input-group">
-                                            <div class="input-group-prepend"><span class="input-group-text"><img class="ml-auto" src="images/visa.png" alt="visa" title=""></span></div>
-                                            <input type="text" class="form-control" data-card-form="edircardNumber" id="edircardNumber" disabled value="XXXXXXXXXXXX4623" placeholder="Card Number">
+                                            <!-- <div class="input-group-prepend"><span class="input-group-text"><img class="ml-auto" src="images/visa.png" alt="visa" title=""></span></div> -->
+                                            <input type="text" class="form-control" data-card-form="edircardNumber" id="edircardNumber" value="XXXXXXXXXXXX4623" placeholder="Card Number">
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                            <label for="edit-card-holder-name">Card Holder Name</label>
-                                            <input type="text" class="form-control" data-card-form="edit-card-holder-name" id="edit-card-holder-name" required value="Sohne Due" placeholder="Card Holder Name">
-                                        </div>
-                                    <div class="form-row">
+                                            <label for="edit-card-holder-name">Nombre</label>
+                                            <input type="text" class="form-control" data-card-form="edit-card-holder-name" id="edit-card-holder-name" required value="Sohne" placeholder="Nombre">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="edit-card-holder-name">Apellido</label>
+                                        <input type="text" class="form-control" data-card-form="edit-card-holder-lname" id="edit-card-holder-lname" required value="Due" placeholder="Apellido">
+                                    </div>
+                                    <!-- <div class="form-row">
                                         <div class="col-lg-6">
                                             <div class="form-group">
                                                 <label for="edit-expire-name">Expiry Date</label>
@@ -263,7 +267,7 @@
                                                 <input id="edit-cvv-number" type="password" class="form-control" data-card-form="edit-cvv-number" required value="321" placeholder="CVV (3 digits)">
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> -->
                                     
                                     <button class="btn btn-default d-block">
                                         <span>Update Card</span>
